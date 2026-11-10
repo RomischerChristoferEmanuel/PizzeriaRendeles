@@ -10,7 +10,7 @@ foreach(Rendeles aktualis in adat)
 {
     Console.WriteLine(aktualis);
 }
-Console.WriteLine("Statisztika:");
+Console.WriteLine("\nStatisztika:");
 int osszesen = adat.Sum(x => x.FizedentoDij());
 Console.WriteLine($"Pizzéria teljes napi bevétele: {osszesen} Ft");
 Rendeles leg = adat.MaxBy(x=>x.PizzakSzama);
